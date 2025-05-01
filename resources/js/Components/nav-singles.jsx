@@ -8,7 +8,8 @@ import { Link } from "@inertiajs/react";
 
 export function NavSingles({ items }) {
     return (
-        <SidebarGroup className="group-data-[collapsible=icon]:hidden">
+        //<SidebarGroup className="group-data-[collapsible=icon]:hidden">
+        <SidebarGroup className="">
             <SidebarMenu>
                 {items.map((item) => (
                     <SidebarMenuItem key={item.name}>
