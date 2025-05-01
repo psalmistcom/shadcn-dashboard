@@ -60,7 +60,7 @@ const data = {
             title: "Dashboard",
             url: "#",
             icon: SquareTerminal,
-            isActive: true,
+            // isActive: true,
             items: [
                 {
                     title: "History",

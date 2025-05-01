@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/Components/ui/card";
 import { Input } from "@/Components/ui/input";
 import GuestAuthLayout from "@/Layouts/GuestAuthLayout";
 import { cn } from "@/lib/utils";
-import { Head, useForm } from "@inertiajs/react";
+import { Head, Link, useForm } from "@inertiajs/react";
 import RightGuestAuthImage from "./RightGuestAuthImage";
 
 export default function ForgotPassword({ status }) {
@@ -63,6 +63,15 @@ export default function ForgotPassword({ status }) {
                                     </Button>
                                 </div>
                             </form>
+                            <div className="text-center text-sm mt-4">
+                                Remembered Password?{" "}
+                                <Link
+                                    href={route("login")}
+                                    className="underline underline-offset-4"
+                                >
+                                    Back to Login
+                                </Link>
+                            </div>
                         </div>
                         <RightGuestAuthImage />
                     </CardContent>
